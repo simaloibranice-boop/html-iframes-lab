@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>My Awesome Company Contact Page</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walkies, Inc. Contact</title>
+</head>
+<body>
+  <h1>Contact Walkies, Inc.</h1>
 
-    <h1>Company Inc.</h1>
-    <h2>For all your incorporated company needs</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-    <!-- Create an iframe tag-->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-  </body>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <!-- 👇 Embed the Google Map right under the contact form -->
+  <h2>Find Us Here</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.983...etc..."
+    width="100%"
+    height="400px"
+    frameborder="1"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+</body>
 </html>
